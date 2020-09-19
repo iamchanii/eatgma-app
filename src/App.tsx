@@ -8,27 +8,30 @@
  * @format
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
-  StyleSheet,
   ScrollView,
-  View,
-  Text,
   StatusBar,
+  StyleSheet,
+  Text,
+  View,
 } from 'react-native';
 
 import {
-  Header,
-  LearnMoreLinks,
   Colors,
   DebugInstructions,
+  Header,
+  LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import auth from '@react-native-firebase/auth';
 
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
+  console.log(auth().currentUser);
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
