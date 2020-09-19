@@ -1523,6 +1523,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-firebase/auth@npm:^9.2.3":
+  version: 9.2.3
+  resolution: "@react-native-firebase/auth@npm:9.2.3"
+  peerDependencies:
+    "@react-native-firebase/app": 8.4.3
+  checksum: 4cfe2c960eafa875594b1fb56fb55f85374cf0bf9619fa9c3683e979e21d9b0e6c3c6b17500b7623dedb3d1fd59b3456f4d2b1d8bf06b5c7fa9389e47acacab9
+  languageName: node
+  linkType: hard
+
 "@sinonjs/commons@npm:^1.7.0":
   version: 1.8.1
   resolution: "@sinonjs/commons@npm:1.8.1"
@@ -3258,6 +3267,7 @@ __metadata:
     "@babel/runtime": ^7.8.4
     "@react-native-community/eslint-config": ^1.1.0
     "@react-native-firebase/app": ^8.4.3
+    "@react-native-firebase/auth": ^9.2.3
     "@types/jest": ^25.2.3
     "@types/react-native": ^0.63.2
     "@types/react-test-renderer": ^16.9.2
