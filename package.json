@@ -7,27 +7,42 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "storybook": "start-storybook -p 6006 -h 0.0.0.0",
+    "build-storybook": "build-storybook",
+    "prestorybook": "rnstl"
   },
   "dependencies": {
     "@react-native-firebase/app": "^8.4.3",
     "@react-native-firebase/auth": "^9.2.3",
     "react": "16.13.1",
+    "react-dom": "16.13.1",
     "react-native": "0.63.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
+    "@mdx-js/react": "^1.6.18",
     "@react-native-community/eslint-config": "^1.1.0",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-docs": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/addon-ondevice-actions": "^5.3.21",
+    "@storybook/react-native": "^5.3.21",
+    "@storybook/react-native-server": "^5.3.21",
     "@types/jest": "^25.2.3",
     "@types/react-native": "^0.63.2",
     "@types/react-test-renderer": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "babel-jest": "^25.1.0",
+    "babel-loader": "^8.1.0",
     "eslint": "^6.5.1",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.59.0",
+    "react-is": "^16.13.1",
+    "react-native-storybook-loader": "^2.0.2",
     "react-test-renderer": "16.13.1",
     "typescript": "^3.8.3"
   },
@@ -41,5 +56,12 @@
       "json",
       "node"
     ]
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": ["./src"],
+      "pattern": "**/*.stories.tsx",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   }
 }
